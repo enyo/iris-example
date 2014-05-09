@@ -12,7 +12,7 @@ If you want to see how to communicate with remote services see the [server http 
 
 ## Browser Client
 
-If you want to see how to communicate with the server from a browser, see the [browser http client example]().
+If you want to see how to communicate with the server from a browser, see the [browser http client example](https://github.com/enyo/remote-services-example/tree/master/web).
 
 ## Remote Services Server
 
