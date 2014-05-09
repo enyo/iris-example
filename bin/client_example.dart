@@ -8,7 +8,7 @@ import "package:logging/logging.dart";
 /// Include the client that communicates with the server
 import "package:remote_services/server_http_client.dart";
 
-/// Including the services themselves
+/// Include the services themselves
 import "../lib/client_services/services.dart";
 
 /// Include the protocol buffer messages.
