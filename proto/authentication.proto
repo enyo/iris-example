@@ -2,19 +2,14 @@
 
 message AuthenticationRequest {
 
-  // The system id of the user
-  required int64 id = 1;
+  required string email = 1;
 
-  // The email of the user
-  required string email = 2;
-
-  // Optional name
-  optional string name = 3;
+  required string password = 2;
 
 }
 
 message AuthenticationResponse {
 
-  required bool success = 4;
+  required bool success = 3;
 
 }

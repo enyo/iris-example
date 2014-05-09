@@ -45,6 +45,6 @@ Future<MyFancyContext> contextInitializer(ServiceRequest req) {
   // Load the session from memory cache instead of just setting stub object.
   context.session = new Session();
 
-  return new Future.value();
+  return new Future.value(context);
 }
 
