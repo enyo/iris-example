@@ -1,0 +1,21 @@
+
+
+message User {
+
+  // The system id of the user
+  required int64 id = 1;
+
+  // The email of the user
+  required string email = 2;
+
+  // Optional name
+  optional string name = 3;
+
+}
+
+
+message UserSearch {
+
+  required string name = 4;
+
+}
