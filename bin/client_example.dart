@@ -5,13 +5,13 @@ library remote_services_client;
 
 import "package:logging/logging.dart";
 
-/// Include the client that runs on the server
+/// Include the client that communicates with the server
 import "package:remote_services/server_http_client.dart";
 
-/// First including the services themselves
+/// Including the services themselves
 import "../lib/client_services/services.dart";
 
-/// Now include the protocol buffer messages.
+/// Include the protocol buffer messages.
 import "../lib/client_services/proto/messages.dart";
 
 
