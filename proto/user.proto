@@ -19,3 +19,7 @@ message UserSearch {
   required string name = 4;
 
 }
+
+message DeleteUser {
+  required int32 id = 5;
+}

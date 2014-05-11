@@ -1,6 +1,6 @@
-library services;
+library service_definitions;
 
-import "package:remote_services/remote_services.dart";
+import "package:remote_services/remote/remote_services.dart";
 
 import "services/services.dart";
 

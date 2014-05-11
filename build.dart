@@ -2,8 +2,9 @@ library build;
 
 import 'package:exitlive_protobuf_builder/proto_builder.dart' as protobuf_builder;
 
-import 'package:remote_services/builder.dart' as remote_services;
+import 'package:remote_services/builder/builder.dart' as remote_services;
 
+import "lib/services/services.dart";
 import "lib/service_definitions.dart";
 
 
@@ -47,7 +48,7 @@ const RS_PROTO_BUFFER_MESSAGES = "lib/proto/messages.dart";
 const RS_SERVICES_DIR = "lib/services/";
 
 buildRemoteServices(args) {
-  remote_services.build(getServices(), RS_TARGET, RS_PROTO_BUFFER_MESSAGES, args: args, includePbMessages: true, servicesDirectory: RS_SERVICES_DIR);
+  remote_services.build(getServices(), RS_TARGET, RS_PROTO_BUFFER_MESSAGES, args: args, includePbMessages: true, servicesDirectory: RS_SERVICES_DIR, errorCodes: ErrorCode);
 }
 
 

@@ -6,7 +6,7 @@ library remote_services_client;
 import "package:logging/logging.dart";
 
 /// Include the client that communicates with the server
-import "package:remote_services/server_http_client.dart";
+import "package:remote_services/client/server_http_client.dart";
 
 /// Include the services themselves
 import "../lib/client_services/services.dart";

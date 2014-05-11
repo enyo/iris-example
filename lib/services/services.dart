@@ -1,7 +1,8 @@
 library services;
 
-import "package:remote_services/annotations.dart";
-import "package:remote_services/remote_services.dart";
+import "package:remote_services/remote/annotations.dart";
+import "package:remote_services/remote/remote_services.dart";
+import "package:remote_services/remote/error_code.dart";
 
 import "../proto/messages.dart";
 
@@ -35,7 +36,15 @@ Future<bool> authFilter(MyFancyContext context) {
 
 
 
+class ErrorCode extends RemoteServicesErrorCode {
 
+  static const INVALID_USERNAME_OR_PASSWORD = const ErrorCode._(0);
+
+  static const INVALID_EMAIL = const ErrorCode._(1);
+
+  const ErrorCode._(int value) : super(value);
+
+}
 
 
 

@@ -5,7 +5,7 @@ import "dart:html";
 
 
 /// Include the client for server communication
-import "package:remote_services/browser_http_client.dart";
+import "package:remote_services/client/browser_http_client.dart";
 
 /// Including the services themselves
 import "package:remote_services_example/client_services/services.dart";
