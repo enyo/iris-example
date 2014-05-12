@@ -2,11 +2,8 @@
 # See http://pub.dartlang.org/doc/glossary.html#lockfile
 packages:
   annotation_crawler:
-    description:
-      ref: null
-      resolved-ref: cf87301bafbf80b1d5d8690c1a81b029cd16ad41
-      url: "https://github.com/exitlive/annotation_crawler"
-    source: git
+    description: annotation_crawler
+    source: hosted
     version: "0.1.0"
   barback:
     description: barback
@@ -52,11 +49,9 @@ packages:
     source: hosted
     version: "0.18.2"
   remote_services:
-    description:
-      path: "/Users/enyo/git/remote_services"
-      relative: false
-    source: path
-    version: "0.0.0"
+    description: remote_services
+    source: hosted
+    version: "0.2.0"
   route:
     description: route
     source: hosted

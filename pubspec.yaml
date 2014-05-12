@@ -1,8 +1,7 @@
 name: remote_services_example
 description: A sample command-line application
 dependencies:
-  remote_services:
-    path: /Users/enyo/git/remote_services
+  remote_services: any
   logging: any
   browser: any
 dev_dependencies:
