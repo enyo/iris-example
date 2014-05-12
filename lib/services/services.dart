@@ -1,6 +1,6 @@
 library services;
 
-import "package:remote_services/remote/annotations.dart";
+import "package:remote_services/remote/annotations.dart" as anno;
 import "package:remote_services/remote/remote_services.dart";
 import "package:remote_services/remote/error_code.dart";
 

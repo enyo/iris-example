@@ -5,7 +5,7 @@ class UserService extends Service {
 
 
 
-  @Procedure(filters: const [authFilter])
+  @anno.Procedure(filters: const [authFilter])
   Future<User> search(MyFancyContext context, UserSearch req) {
     return new Future.value(
         new User()
@@ -15,7 +15,7 @@ class UserService extends Service {
   }
 
 
-  @Procedure()
+  @anno.Procedure()
   Future delete(MyFancyContext context, DeleteUser userDel) {
     // delete user with userDel.id
     return new Future.value();
