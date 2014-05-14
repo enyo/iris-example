@@ -1,7 +1,8 @@
-name: remote_services_example
-description: A sample command-line application
+name: iris_example
+description: An iris example
 dependencies:
-  remote_services: any
+  iris:
+    path: /Users/enyo/git/iris
   logging: any
   browser: any
 dev_dependencies:

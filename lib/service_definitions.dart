@@ -1,13 +1,13 @@
 library service_definitions;
 
-import "package:remote_services/remote/remote_services.dart";
+import "package:iris/remote/iris.dart";
 
 import "services/services.dart";
 
 
-ServiceDefinitions getServices() {
-  return new ServiceDefinitions(contextInitializer)
+Iris getServices() {
+  return new Iris(contextInitializer)
         ..addService(new UserService())
         ..addService(new AuthenticationService())
-        ..addServer(new HttpServiceServer("localhost", 8088, allowOrigin: "http://127.0.0.1:3030"));
+        ..addServer(new HttpIrisServer("localhost", 8088, allowOrigin: "http://127.0.0.1:3030"));
 }

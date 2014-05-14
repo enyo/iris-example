@@ -2,7 +2,7 @@ library build;
 
 import 'package:exitlive_protobuf_builder/proto_builder.dart' as protobuf_builder;
 
-import 'package:remote_services/builder/builder.dart' as remote_services;
+import 'package:iris/builder/builder.dart' as iris_builder;
 
 import "lib/services/services.dart";
 import "lib/service_definitions.dart";
@@ -41,14 +41,14 @@ buildProtobuf(args) {
 
 
 
-const RS_TARGET = "lib/client_services";
+const IRIS_TARGET = "lib/client_services";
 
-const RS_PROTO_BUFFER_MESSAGES = "lib/proto/messages.dart";
+const IRIS_PROTO_BUFFER_MESSAGES = "lib/proto/messages.dart";
 
-const RS_SERVICES_DIR = "lib/services/";
+const IRIS_SERVICES_DIR = "lib/services/";
 
 buildRemoteServices(args) {
-  remote_services.build(getServices(), RS_TARGET, RS_PROTO_BUFFER_MESSAGES, args: args, includePbMessages: true, servicesDirectory: RS_SERVICES_DIR, errorCodes: ErrorCode);
+  iris_builder.build(getServices(), IRIS_TARGET, IRIS_PROTO_BUFFER_MESSAGES, args: args, includePbMessages: true, servicesDirectory: IRIS_SERVICES_DIR, errorCodes: ErrorCode);
 }
 
 

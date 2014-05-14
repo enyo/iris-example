@@ -6,7 +6,7 @@ library remote_services_client;
 import "package:logging/logging.dart";
 
 /// Include the client that communicates with the server
-import "package:remote_services/client/server_http_client.dart";
+import "package:iris/client/server_http_client.dart";
 
 /// Include the services themselves
 import "../lib/client_services/services.dart";
@@ -22,7 +22,7 @@ main() {
 
 
   // Create the HttpServiceClient so the services know how to connect.
-  var client = new HttpServiceClient(Uri.parse("http://localhost:8088"));
+  var client = new HttpIrisClient(Uri.parse("http://localhost:8088"));
 
   // Create the services with the client.
   var services = new Services(client);

@@ -1,8 +1,8 @@
 library services;
 
-import "package:remote_services/remote/annotations.dart" as anno;
-import "package:remote_services/remote/remote_services.dart";
-import "package:remote_services/remote/error_code.dart";
+import "package:iris/remote/annotations.dart" as anno;
+import "package:iris/remote/iris.dart";
+import "package:iris/remote/error_code.dart";
 
 import "../proto/messages.dart";
 
@@ -36,7 +36,7 @@ Future<bool> authFilter(MyFancyContext context) {
 
 
 
-class ErrorCode extends RemoteServicesErrorCode {
+class ErrorCode extends IrisErrorCode {
 
   static const INVALID_USERNAME_OR_PASSWORD = const ErrorCode._(0);
 
@@ -48,7 +48,7 @@ class ErrorCode extends RemoteServicesErrorCode {
 
 
 
-Future<MyFancyContext> contextInitializer(ServiceRequest req) {
+Future<MyFancyContext> contextInitializer(IrisRequest req) {
   var context = new MyFancyContext(req);
 
   // Load the session from memory cache instead of just setting stub object.

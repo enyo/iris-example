@@ -5,13 +5,13 @@ import "dart:html";
 
 
 /// Include the client for server communication
-import "package:remote_services/client/browser_http_client.dart";
+import "package:iris/client/browser_http_client.dart";
 
 /// Including the services themselves
-import "package:remote_services_example/client_services/services.dart";
+import "package:iris_example/client_services/services.dart";
 
 /// Include the protocol buffer messages.
-import "package:remote_services_example/client_services/proto/messages.dart";
+import "package:iris_example/client_services/proto/messages.dart";
 
 
 Services services;
@@ -19,7 +19,7 @@ Services services;
 main() {
 
   // Create the HttpServiceClient so the services know how to connect.
-  var client = new HttpServiceClient(Uri.parse("http://localhost:8088"));
+  var client = new HttpIrisClient(Uri.parse("http://localhost:8088"));
 
   // Create the services with the client.
   services = new Services(client);

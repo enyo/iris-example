@@ -32,6 +32,12 @@ packages:
     description: fixnum
     source: hosted
     version: "0.9.0"
+  iris:
+    description:
+      path: "/Users/enyo/git/iris"
+      relative: false
+    source: path
+    version: "0.2.3"
   logging:
     description: logging
     source: hosted
@@ -48,10 +54,6 @@ packages:
     description: quiver
     source: hosted
     version: "0.18.2"
-  remote_services:
-    description: remote_services
-    source: hosted
-    version: "0.2.0"
   route:
     description: route
     source: hosted
