@@ -6,7 +6,7 @@ class UserService extends Service {
 
 
   @anno.Procedure(filters: const [authFilter])
-  Future<User> search(MyFancyContext context, UserSearch req) {
+  Future<User> search(Ctx context, UserSearch req) {
     return new Future.value(
         new User()
             ..email = "eee@mail.com"
@@ -16,9 +16,15 @@ class UserService extends Service {
 
 
   @anno.Procedure()
-  Future delete(MyFancyContext context, DeleteUser userDel) {
+  Future delete(Ctx context, DeleteUser userDel) {
     // delete user with userDel.id
     return new Future.value();
+  }
+
+
+  @anno.Procedure()
+  Future invalidProcedure(Ctx context) {
+    throw new ProcedureException(ErrorCode.NO_USER_SUBMITTED, "This is a test error message sent from the server.");
   }
 
 }

@@ -1,8 +1,7 @@
 name: iris_example
 description: An iris example
 dependencies:
-  iris:
-    path: /Users/enyo/git/iris
+  iris: ">= 0.2.4"
   logging: any
   browser: any
 dev_dependencies:

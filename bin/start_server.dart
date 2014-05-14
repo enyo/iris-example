@@ -3,7 +3,7 @@ library remote_services_server;
 
 import "package:logging/logging.dart";
 
-import "../lib/service_definitions.dart";
+import "../lib/iris.dart";
 
 
 
@@ -13,7 +13,7 @@ main() {
   Logger.root.onRecord.listen((LogRecord record) => print('${record.loggerName} (${record.level}): ${record.message}'));
 
 
-  getServices().startServers();
+  getIris().startServers();
 
 
 }

@@ -5,7 +5,7 @@ import "package:iris/remote/iris.dart";
 import "services/services.dart";
 
 
-Iris getServices() {
+Iris getIris() {
   return new Iris(contextInitializer)
         ..addService(new UserService())
         ..addService(new AuthenticationService())

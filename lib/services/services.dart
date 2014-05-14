@@ -21,16 +21,16 @@ class Session {
 }
 
 
-class MyFancyContext extends Context {
+class Ctx extends Context {
 
   Session session;
 
-  MyFancyContext(req) : super(req);
+  Ctx(req) : super(req);
 
 }
 
 
-Future<bool> authFilter(MyFancyContext context) {
+Future<bool> authFilter(Ctx context) {
   return new Future.value(context.session.loggedIn);
 }
 
@@ -42,14 +42,16 @@ class ErrorCode extends IrisErrorCode {
 
   static const INVALID_EMAIL = const ErrorCode._(1);
 
+  static const NO_USER_SUBMITTED = const ErrorCode._(2);
+
   const ErrorCode._(int value) : super(value);
 
 }
 
 
 
-Future<MyFancyContext> contextInitializer(IrisRequest req) {
-  var context = new MyFancyContext(req);
+Future<Ctx> contextInitializer(IrisRequest req) {
+  var context = new Ctx(req);
 
   // Load the session from memory cache instead of just setting stub object.
   context.session = new Session();
