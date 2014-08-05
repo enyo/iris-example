@@ -1,6 +1,6 @@
 library build;
 
-import 'package:exitlive_protobuf_builder/proto_builder.dart' as protobuf_builder;
+import 'package:protobuf_builder/proto_builder.dart' as protobuf_builder;
 
 import 'package:iris/builder/builder.dart' as iris_builder;
 

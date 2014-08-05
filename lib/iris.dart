@@ -9,5 +9,5 @@ Iris getIris() {
   return new Iris(contextInitializer)
         ..addService(new UserService())
         ..addService(new AuthenticationService())
-        ..addServer(new HttpIrisServer("localhost", 8088, allowOrigin: "http://127.0.0.1:3030"));
+        ..addServer(new HttpIrisServer("localhost", 8088));
 }

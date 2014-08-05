@@ -5,5 +5,4 @@ dependencies:
   logging: any
   browser: any
 dev_dependencies:
-  exitlive_protobuf_builder:
-    git: git@github.com:exitlive/exitlive-protobuf-builder.git
+  protobuf_builder: any

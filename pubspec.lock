@@ -8,7 +8,7 @@ packages:
   barback:
     description: barback
     source: hosted
-    version: "0.12.0"
+    version: "0.13.0"
   browser:
     description: browser
     source: hosted
@@ -21,13 +21,6 @@ packages:
     description: crypto
     source: hosted
     version: "0.9.0"
-  exitlive_protobuf_builder:
-    description:
-      ref: null
-      resolved-ref: "3d27bb400ba59f8050641050e0d7beef5b51cc54"
-      url: "git@github.com:exitlive/exitlive-protobuf-builder.git"
-    source: git
-    version: "0.1.1"
   fixnum:
     description: fixnum
     source: hosted
@@ -35,7 +28,7 @@ packages:
   iris:
     description: iris
     source: hosted
-    version: "0.2.4"
+    version: "0.6.0"
   logging:
     description: logging
     source: hosted
@@ -48,6 +41,10 @@ packages:
     description: protobuf
     source: hosted
     version: "0.3.3"
+  protobuf_builder:
+    description: protobuf_builder
+    source: hosted
+    version: "0.1.2"
   quiver:
     description: quiver
     source: hosted
